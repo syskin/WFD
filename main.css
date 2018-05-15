@@ -1,0 +1,194 @@
+body {
+    margin:0;
+}
+.a {
+    font-size: 22px;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+.b{
+    font-size: 18px;
+    color: #000000;
+}
+.c{
+    font-size: 13px;
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.Lcard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.grid-container {
+    background-color: papayawhip;
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    grid-gap: 20px;
+    margin-top: 30px; 
+    margin-left : 10%;
+    margin-right: 10%; 
+  }
+  
+.categories{
+      grid-column: 1/5;
+  }
+.title{
+    grid-column: 1/5;
+}
+.table-filter{
+    grid-column: 1/5;
+}
+.zes{
+    grid-column: 1/5;
+}
+.search_bar{
+    float: left;
+}
+.search_bar input[type=text] {
+    padding: 6px;
+    width: 350px;
+    margin-top: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 100px 15px 15px 100px;
+  }
+
+.search_bar .search-container button {
+    float: center;
+    border-radius: 15px 80px 80px 15px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+.search_bar .search-container button:hover {
+    background: #ccc;
+  }
+.search_bar input[type=text] {
+    border: 1px solid #ccc;
+    }
+
+#title{
+    font-weight: bold;
+}  
+#menu , #menu ul    
+{
+    padding : 0;
+    margin:0;
+    list-style-type: none;
+    overflow: hidden;
+    text-align : center;;
+    }
+#menu
+    {
+    margin:0 auto;
+    padding: 0px;
+    font-size : 20px;
+    text-align: center;
+    }
+#menu a
+    {
+    display : block;
+    width:150px;
+    padding : 3;
+    margin: 0;
+    text-decoration : none;
+    width : 100px;
+    height : auto;
+    }
+    
+#menu li
+    {
+    float : left;
+    margin: 0 auto;
+    }
+
+#menu li a{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        padding: 15px 15px;
+    }
+    
+
+#menu li ul
+    {
+    position : absolute;
+    width : 100px;
+    left : -999em;
+    }
+#menu li ul li
+    {
+    border-top :0;
+    border-bottom :0;
+    font-size:13px;
+    background-color: rgb(233, 233, 233);
+    }
+     
+#menu li a:hover
+    {
+    background-color : rgb(182, 182, 182);
+    }
+     
+#menu li:hover ul ,#menu li li:hover ul , #menu li.sfhover ul ,#menu li li.sfhover ul
+    {
+    left : auto;
+    }
+
+
+    .modalDialog {
+        position: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 200ms ease-in;
+        -moz-transition: opacity 200ms ease-in;
+        transition: opacity 200ms ease-in;
+        pointer-events: none;
+    }
+
+    .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+    
+    .modalDialog > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        background: #fff;
+    }
+
+    .close {
+        position: absolute;
+        right: 8px;
+        text-align: center;
+        top: 8px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+
+    
